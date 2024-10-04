@@ -5,10 +5,46 @@ html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .header {
   font-family: monospace;
   color: white;
   padding: 5px;
+}
+
+.futura_container {
+  display: flex;
+  width: 100%;
+}
+
+.futura_logo {
+  position: relative;
+  bottom: 75px;
+  width: 100%;
+  height: auto;
+  margin-left: 30%;
+}
+
+.cd {
+  display: block;
+  position: absolute;
+  left: 250px;
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  animation-name: falling_cd;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes falling_cd {
+  from {
+    transform: translate(0, 1000px) rotate(0deg);
+  }
+  to {
+    transform: translate(0, -1000px) rotate(1080deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
